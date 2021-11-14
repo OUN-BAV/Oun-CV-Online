@@ -476,12 +476,12 @@ footer{
     background-size: cover;
     clip-path: circle(50% at 50% 50%);
 }
-.text{
+.content5 .text{
     width: 40%;
     height: 60vh;
     margin-left: 10%;
 }
-.text h1{
+.content5.text h1{
     color: orange;
 }
 .map{
