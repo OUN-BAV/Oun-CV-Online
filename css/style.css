@@ -1,0 +1,498 @@
+body{
+    margin: 0;padding: 0;
+    background: black;
+}
+.container{
+    width: 100%;
+}
+
+/* navigationbar */
+
+nav{
+    background: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    width: 11%;
+    height: 23vh;
+    margin: 5px;
+    background: blueviolet;
+    clip-path: circle(50% at 50% 50%);
+}
+.logo img{
+    width: 100%;
+    height: 24vh;
+}
+.nav-right {
+    width: 50%;
+}
+.nav-right ul{
+    width: 100%;
+    margin-left: 490px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-right ul li{
+    list-style: none;
+    padding: 10px;
+    background: rgb(40, 40, 250);
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.nav-right ul li:hover{
+    background: rgb(125, 125, 243);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.active{
+    background: rgb(1, 1, 119);
+}
+.nav-right a{
+    text-decoration: none;
+    color: #fff;
+}
+/* content1 */
+.content1{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+.sidebar-left{
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    width: 45%;
+    height: 48vh;
+    background: cornflowerblue;
+    clip-path: circle(50% at 50% 50%);
+}
+.profile img{
+    width: 100%;
+}
+.sidebar-right{
+    width: 50%;
+    height: 70vh;
+    margin-top: 50px;
+}
+.text{
+    width: 100%;
+    height: 60vh;
+    color: #fff;
+}
+.text h2{
+    font-size: 3rem;
+}
+.text p{
+    font-size: 2rem;
+}
+.text span{
+    color: orange;
+    font-size: 4rem;
+}
+.sidebar-right button{
+    padding: 10px;
+    height: 10vh;
+    width: 150px;
+    margin: 5px;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: rgb(40, 40, 250);
+}
+footer{
+    width: 100%;
+    height: 25vh;
+}
+.socail{
+    width: 50%;
+    height: 20vh;
+    border-radius: 0 50px 50px 0;
+    background:rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+label{
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+.socail1{
+    width: 200px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-telegram,.fa-facebook-square{
+    color: rgb(15, 86, 240);
+    background-color: #fff;
+    clip-path: circle(45.5% at 50% 50%);
+}
+.fa-chrome{
+    color: orange;
+}
+/* Contact */
+.content2{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+}
+.content2 .sidebar-left{
+    width: 30%;
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(161, 161, 161, 0.808);
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+.content2 .sidebar-left i{
+    font-size: 50px;
+}
+.content2 .sidebar-right{
+    width: 60%;
+    height: 120vh;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    background: rgba(161, 161, 161, 0.808);
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.content2 .pf{
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+}
+.content2 .pf img{
+    width: 200px;
+    height: 31vh;
+    clip-path: circle(50% at 50% 50%);
+}
+.social{
+    width: 10px;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+form{
+    width: 80%;
+    height: 80vh;
+    text-align: center;
+}
+.row{
+    width: 100%;
+    display: flex;
+}
+.col-left{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.col-right{
+    width: 70%;
+}
+.col-left label{
+    font-size: 2rem;
+    color: #ccc;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+textarea{
+    width: 99%;
+    margin: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    width: 20%;
+    background:rgb(40, 40, 250) ;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+input[type="submit"]:hover{
+    background:rgb(125, 125, 243) ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+form h1{
+    color: orange;
+    font-size: 3rem;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.sidebar-left h4{
+    color: #ccc;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+}
+.f-left{
+    width: 200px;
+    height: 25vh;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.f-right{
+    margin-left: 300px;
+    width: 40%;
+    height: 25vh;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.f-right span{
+    color: orange;
+    font-size: 2rem;
+}
+
+/* Skill */
+.content3{
+    height: 220vh;
+}
+.container h2{
+    color: orange;
+}
+.top-content{
+    display: flex;
+    color: #fff;
+    height: 60vh;
+}
+.top-content img{
+    width: 250px;
+    height: 50vh;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+.top-content .text{
+    width: 65%;
+    height: 60vh;
+    padding: 20px;
+}
+.top-content .photo{
+    width: 35%;
+    height: 60vh;
+    text-align: center;
+    padding: 20px;
+}
+.midal-content{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 5%;
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+}.midal-content .box{
+    background-color:gray;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #ccc;
+}
+.buttom-content{
+    display: flex;
+    color:#fff;
+}
+.buttom-content .text{
+    width: 65%;
+    height: 60vh;
+    padding: 20px;
+}
+.buttom-content .photo{
+    width: 35%;
+    height: 60vh;
+    text-align: center;
+    padding: 20px;
+}
+.buttom-content img{
+    width: 250px;
+    height: 50vh;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+.star{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.star i{
+    font-size: 30px;
+    color: yellow;
+}
+.box .ph img{
+    width: 200px;
+    height: 32vh;
+    clip-path: circle(50% at 50% 50%);
+}
+.midal-content h1{
+    font-size: 2.5rem;
+    color: rgb(253, 174, 27);
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.end-content{
+    width: 100%;
+    background: rgb(44, 44, 44);
+    border: 2px solid #ccc;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.end-content img{
+    width: 155px;
+    height: 25vh;
+    clip-path: circle(50% at 50% 50%);
+}
+
+/* hobbie */
+
+.head{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    background: url(../image/Hobbei/Excersice\ .png);
+    background-size: cover;
+    margin-top: 20px;
+}
+.head .head-left{
+    width: 60%;
+    height: 80vh;
+    background: rgba(17, 80, 252, 0.541);
+    clip-path: polygon(0 0, 53% 0, 100% 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.head .head-left .con img{
+    width: 200px;
+    border-radius: 10px;
+}
+.head .head-left .con h3{
+    font-size: 1.5rem;
+    color: rgb(253, 176, 32);
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+.head .head-left .con p{
+    color: #ccc;
+    font-size: 1.2rem;
+}
+.content4 .row-photo{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 100px;
+    margin: 50px;
+}
+.content4 .row-photo .pho img{
+    width: 200px;
+    height: 32vh;
+    clip-path: circle(50% at 50% 50%);
+}
+.content4 .row-photo .pho{
+    border: 2px solid #ccc;
+    height: 50vh;
+    color: #ccc;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 10px;
+}
+.row-foot1,.row-foot2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #ccc;
+}
+.row-foot1 .photo,.row-foot2 .photo{
+    width: 40%;
+}
+.row-foot1 .photo img,.row-foot2 .photo img{
+    width: 500px;
+    border: 4px solid #ccc;
+}
+.row-foot1 .text,.row-foot2 .text{
+    width: 60%;
+    align-items: center;
+    
+}
+.row-foot1 .text h1,.row-foot2 .text h1{
+    color: orange;
+    font-size: 3rem;
+}
+
+/* province */
+.content5{
+    height: 170vh;
+}
+.cover{
+    display:flex;
+}
+.cover .cover-left{
+    display: flex;
+}
+.cover .cover-left .image{
+    width: 600px;
+}
+.cover .cover-left .image img{
+    width: 100%;
+    height: 60vh;
+}
+.pro{
+    position:absolute;
+    width: 200px;
+    height: 32vh;
+    left: 500px;
+    top: 250px;
+    background: url(../image/province/second.png.jpeg);
+    background-size: cover;
+    clip-path: circle(50% at 50% 50%);
+}
+.text{
+    width: 40%;
+    height: 60vh;
+    margin-left: 10%;
+}
+.text h1{
+    color: orange;
+}
+.map{
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    color: orange;
+}
+.map h1{
+    font-size: 5rem;
+}
+iframe{
+    width: 90%;
+}
