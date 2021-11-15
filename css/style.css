@@ -16,14 +16,12 @@ nav{
 }
 .logo{
     width: 11%;
-    height: 23vh;
-    margin: 5px;
-    background: blueviolet;
-    clip-path: circle(50% at 50% 50%);
-}
-.logo img{
-    width: 100%;
     height: 24vh;
+    margin: 5px;
+    background: url(../image/My\ logo.PNG);
+    background-size: cover;
+    background-position-x: center;
+    clip-path: circle(50% at 50% 50%);
 }
 .nav-right {
     width: 50%;
@@ -73,11 +71,9 @@ nav{
 .profile{
     width: 45%;
     height: 48vh;
-    background: cornflowerblue;
+    background: url(../image/Home/third.png.jpeg);
+    background-size: cover;
     clip-path: circle(50% at 50% 50%);
-}
-.profile img{
-    width: 100%;
 }
 .sidebar-right{
     width: 50%;
@@ -138,6 +134,9 @@ label{
     justify-content: center;
     align-items: center;
 }
+.socail1 i{
+    font-size: 3rem;
+}
 .fa-telegram,.fa-facebook-square{
     color: rgb(15, 86, 240);
     background-color: #fff;
@@ -153,7 +152,7 @@ label{
     display: flex;
 }
 .content2 .sidebar-left{
-    width: 30%;
+    width: 20%;
     height: 120vh;
     display: flex;
     flex-wrap: wrap;
@@ -175,16 +174,20 @@ label{
     margin-left: 70px;
     margin-top: 20px;
 }
-.content2 .pf{
+.sub-pf{
     width: 100%;
-    height: 30vh;
-    text-align: center;
 }
-.content2 .pf img{
-    width: 200px;
-    height: 31vh;
+.content2 .pf{
+    width: 80%;
+    height: 35vh;
+    margin: auto;
+    background: url(../image/contact/first.png.JPEG);
+    background-size: cover;
+    background-position-y: center;
+    text-align: center;
     clip-path: circle(50% at 50% 50%);
 }
+
 .social{
     width: 10px;
     height: 40vh;
@@ -264,6 +267,9 @@ footer{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+.f-left i{
+    font-size: 3rem;
 }
 .f-right{
     margin-left: 300px;
@@ -495,4 +501,84 @@ footer{
 }
 iframe{
     width: 90%;
+}
+
+/* Responsive */
+@media (max-width: 1024px){
+   /* nav */
+   .nav-right {
+       width: 100%;
+   }
+   .nav-right ul{
+        margin-left: 0px;
+        width: 90%;
+        
+   }
+   .logo{
+       width: 80px;
+       height: 12vh;
+   }
+   /* .content1 */
+   .socail1 i{
+       font-size: 2rem;
+   }
+   .socail1 label{
+       font-size: 1rem;
+   }
+   .profile{
+       width: 150px;
+       height:26vh ;
+   }
+   .text h2{
+       font-size: 2rem;
+   }
+   .text span{
+       font-size: 2.5rem;
+   }
+   .text p{
+       font-size: 1.3rem;
+   }
+   /* .content2 */
+   .f-left i{
+    font-size: 2.5rem;
+    }
+    .f-left label{
+        font-size: 1.9rem;
+    }
+    .f-right p{
+        font-size: 1.2rem;
+    }
+    .f-right span{
+        font-size: 1.5rem;
+    }
+    .f-right{
+        margin-left: 100px;
+    }
+    .content2 .pf{
+        width: 74%;
+        height: 20vh;
+    }
+    form input,textarea,input[type="submit"]{
+        padding: 5px;
+        font-size: 1rem;
+    }
+    .row label{
+        font-size: 1.2rem;
+    }
+    /* Hobbie */
+    .row-foot1 .photo img,.row-foot2 .photo img{
+        width: 400px;
+    }
+    .row-foot1 .text,.row-foot2 .text{
+        width: 50%;
+        margin-left: 30px;
+    }
+    /* province */
+    .pro{
+        top: 160px;
+        left:400px ;
+    }
+    .cover .cover-left .image{
+        width: 500px;
+    }
 }
